@@ -10,8 +10,10 @@ var Parser = require('swagger-parser');
 /**
  * Test for /user
  */
-Test('/user', function (t) {
+Test('TinoTest', function (t) {
 
     t.ok(true, 'Tino test succeeded');
+
+    t.end();
 
 });
