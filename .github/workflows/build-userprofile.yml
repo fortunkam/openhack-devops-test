@@ -14,7 +14,12 @@
 # For more samples to get started with GitHub Action workflows to deploy to Azure, refer to https://github.com/Azure/actions-workflow-samples
 on:
   workflow_dispatch:
-
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    
 env:
   NODE_VERSION: '10.x'                # set this to the node version to use
 
